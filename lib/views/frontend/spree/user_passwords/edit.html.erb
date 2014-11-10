@@ -5,7 +5,7 @@
       <h3 class="panel-title"><%= Spree.t(:change_my_password) %></h3>
     </div>
     <div class="panel-body">
-      <%= form_for @spree_user, :as => :spree_user, :url => spree.update_password_path, :method => :put do |f| %>
+      <%= form_for @spree_user, :as => :refinery_user, :url => spree.update_password_path, :method => :put do |f| %>
         <p>
           <%= f.label :password, Spree.t(:password) %><br />
           <%= f.password_field :password, :class => "form-control" %><br />
